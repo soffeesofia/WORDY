@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="439.0" prefWidth="620.0" style="-fx-background-color: #5a78fa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.WordyClient">
+   <children>
+      <Label fx:id="wlButton" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="257.0" prefHeight="43.0" prefWidth="409.0" text="Player NULL has won the game!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="178.0" text="ROUND OVER" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Bold" size="57.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="153.0" fitWidth="437.0" layoutX="92.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background/wordy-.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.WordyClient">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" />
+      <ImageView fitHeight="564.0" fitWidth="748.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background/loginpage.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="227.0" layoutY="85.0" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="96.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameLogin" layoutX="210.0" layoutY="251.0" prefHeight="42.0" prefWidth="338.0" promptText="Enter Username" style="-fx-background-radius: 15px;">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginButton" layoutX="288.0" layoutY="427.0" mnemonicParsing="false" onAction="#loginPressed" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #ffc061; -fx-background-radius: 15px;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="685.0" layoutY="25.0" mnemonicParsing="false" onAction="#closePressed" style="-fx-background-color: #ffc061; -fx-background-radius: 10px;" text="x" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordLogin" layoutX="210.0" layoutY="334.0" prefHeight="42.0" prefWidth="338.0" promptText="Enter Password" style="-fx-background-radius: 15px;">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

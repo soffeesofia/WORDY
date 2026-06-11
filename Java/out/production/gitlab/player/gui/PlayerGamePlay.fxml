@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="GamePage" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.WordyClient">
+   <children>
+      <ImageView fitHeight="555.0" fitWidth="740.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background/gameplay.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="buttonsPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button id="a" fx:id="c" layoutX="287.0" layoutY="220.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="b" fx:id="i" layoutX="242.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="c" fx:id="j" layoutX="336.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="d" fx:id="f" layoutX="568.0" layoutY="220.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="e" fx:id="e" layoutX="474.0" layoutY="220.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="f" fx:id="d" layoutX="384.0" layoutY="220.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="g" fx:id="k" layoutX="429.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="h" fx:id="q" layoutX="474.0" layoutY="383.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="i" fx:id="h" layoutX="146.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="j" fx:id="n" layoutX="192.0" layoutY="383.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="k" fx:id="o" layoutX="281.0" layoutY="383.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="l" fx:id="l" layoutX="525.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="m" fx:id="p" layoutX="384.0" layoutY="383.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="n" fx:id="b" layoutX="192.0" layoutY="220.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="o" fx:id="m" layoutX="615.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="p" fx:id="g" layoutX="56.0" layoutY="301.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Button id="q" fx:id="a" layoutX="102.0" layoutY="220.0" mnemonicParsing="false" onAction="#randomLetters" prefHeight="66.0" prefWidth="63.0" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="countdown" layoutX="69.0" layoutY="40.0" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="49.0" />
+               </font>
+            </Label>
+         </children>
+
+      </Pane>
+      <Label fx:id="answer" layoutX="316.0" layoutY="116.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="177.5999755859375" endY="1.52587890625E-5" layoutX="390.0" layoutY="159.0" startX="-201.5999755859375" startY="1.52587890625E-5" stroke="WHITE" />
+      <Label fx:id="invalid" layoutX="313.0" layoutY="169.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="quitGameButton" layoutX="596.0" layoutY="16.0" mnemonicParsing="false" onAction="#quitGamePressed" style="-fx-background-radius: 15px; -fx-background-color: #6fe8b5;" text="Quit Game" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="enterButton" layoutX="138.0" layoutY="475.0" mnemonicParsing="false" onAction="#enterPressed" prefHeight="46.0" prefWidth="445.0" style="-fx-background-color: #6fe8b5;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="598.0" layoutY="475.0" mnemonicParsing="false" onAction="#randomLetters" style="-fx-background-color: #6fe8b5;" text="CLR" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="roundNum" alignment="CENTER" layoutX="429.0" layoutY="25.0" prefHeight="60.0" prefWidth="92.0" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Rockwell" size="49.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="81.0" fitWidth="342.0" layoutX="228.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background/wordy-.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

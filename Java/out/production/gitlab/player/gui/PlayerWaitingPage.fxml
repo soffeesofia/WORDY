@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8870B9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.WordyClient">
+   <children>
+      <Label layoutX="139.0" layoutY="221.0" prefHeight="96.0" prefWidth="408.0" text="Waiting for other players..." textAlignment="RIGHT" textFill="WHITE" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="221.0">
+         <font>
+            <Font name="Rockwell Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="173.0" fitWidth="490.0" layoutX="98.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="187.7463836669922" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="81.0">
+         <image>
+            <Image url="@background/wordy-.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

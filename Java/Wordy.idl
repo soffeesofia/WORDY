@@ -1,0 +1,89 @@
+module wordyGame{
+    struct Player {
+        string username;
+        string password;
+    };
+    
+
+    struct Word {
+        string username;
+        string wordSub;
+    };
+    
+    typedef sequence<string> StringSeq;
+    typedef sequence<char> CharSeq;
+    typedef sequence<Word> WordSeq;
+
+    //EXCEPTION
+    exception noOtherPlayersAvailable {
+        string message;
+    };
+
+    exception invalidWord {
+        string message;
+    };
+
+    exception noSubmittedWord{
+        string message;
+    };
+
+    exception invalidLetters{
+        string message;
+    };
+
+    exception invalidCredentials {
+        string message;
+    };
+
+    exception invalidUser {
+        string message;
+    };
+
+    exception existingSession {
+            string message;
+    };
+
+    exception timeElapsed {
+        string message;
+    };
+
+    exception noWinner {
+       string message;
+    };
+
+    exception drawWinners {
+       string message;
+    };
+
+    interface WordyInt {
+        //checks user login
+        boolean verifyLogin(in Player p) raises (invalidCredentials, invalidUser, existingSession);
+        //starts a new game at player's initiate
+        void newGame(in string username) raises (noOtherPlayersAvailable);
+        //gets letter array from server
+        CharSeq receiveLetters(in string username);
+        //validates a submitted word
+        void submitWord(in string word, in string username) raises (invalidWord, noSubmittedWord, invalidLetters);
+        //gets game timer
+        long getGameTime(in string username);
+        //start timer
+        void startGameTime(in long seconds, in string username);
+        //checks if a game is ongoing
+        boolean getGameState(in string username);
+        //checks the winners of a game
+        boolean getWinState(in string username);
+        //gets winner for the current round
+        string getRoundWin(in string username) raises (noWinner, drawWinners);
+        void signalRoundEnd(in string username);
+        //gets winner for game
+        string getGameWin(in string username);
+        void logout(in string username);
+        //returns a list of top 5 players
+        StringSeq topPlayers();
+        //returns a list of top 5 submitted word
+        WordSeq topWords();
+    };
+
+
+};
+	
